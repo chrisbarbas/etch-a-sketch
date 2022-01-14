@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Etch<span id="redslash">/</span>A<span id="blueslash">/</span>Sketch</h1>
+
+    <div class="container" id="box">
+    </div>
+    <div class="menu">
+        <div class="menu-left">
+            <div class="colorcontainer">
+                <p>Color Picker</p>
+                <input type="color" id="colorpicker" value="#000000">
+            </div>
+            <div class="slidecontainer">
+                <p>Grid Density: <span id="demo"></span></p>
+                <input type="range" min="4" max="48" value="32" class="slider" id="myRange">
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="top-row">
+                <button id="blackBtn">Black</button>
+                <button id="rainbowBtn">Rainbow</button>
+                <button id="eraserBtn">Eraser</button>
+            </div>
+            <div class="bottom-row">
+                <button id="resetBtn">Reset</button>
+                <button id="toggleBtn">Grid Lines</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
